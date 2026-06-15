@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>LN-SLC-Map</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/AdvatelWirelessPtyLtdcombinedserviceareas_3.js"></script><script src="layers/AppliedITSystemsPtyLtdCombinedserviceareas_4.js"></script><script src="layers/ASNTelecomPtyLtdCombinedServiceAreas_5.js"></script><script src="layers/AustralianCommunicationsGroupPtyLtdCombinedserviceareas_6.js"></script><script src="layers/CipherTelPtyLtdcombinedserviceareas_7.js"></script><script src="layers/CNTCorpPtyLtdCombinedServiceAreas_8.js"></script><script src="layers/CommscoPtyLtdCombinedServiceAreas_9.js"></script><script src="layers/CommSolHoldingsPtyLtdcombinedserviceareas_10.js"></script><script src="layers/CoreFibreNetworksPtyLtdCombinedserviceareas_11.js"></script><script src="layers/DGTekPtyLtdCombinedserviceareas_12.js"></script><script src="layers/FiberAssetManagementPtyLtdcombinedserviceareas_13.js"></script><script src="layers/FibossPtyLtdCombinedserviceareas_14.js"></script><script src="layers/FrontierNetworksPtyLtdCombinedareas_15.js"></script><script src="layers/GtelecomPtyLtdCombinedServiceAreas_16.js"></script><script src="layers/InterphonePtyLtdCombinedServiceAreas_17.js"></script><script src="layers/LegionTelecomPtyLtdCombinedServiceAreas_18.js"></script><script src="layers/MyportPtyLtdCombinedserviceareas_19.js"></script><script src="layers/NetbayFreeWiFiPtyLtdCombinedserviceareas_20.js"></script><script src="layers/OMNIconnectPtyLtdcombinedserviceareas_21.js"></script><script src="layers/PipeNetworksPtyLtdCombinedserviceareas_22.js"></script><script src="layers/RealWorldNetworksPtyLtdCombinedserviceareas_23.js"></script><script src="layers/ReddenetPtyLtdCombinedserviceareas_24.js"></script><script src="layers/SensiaPtyLtdCombinedServiceAreas_25.js"></script><script src="layers/TaipanNetworxPtyLtdcombinedareas_26.js"></script><script src="layers/TransactCapitalCommunicationsPtyLtdCombinedserviceareas_27.js"></script><script src="layers/VineNetworksPtyLtdCombinedserviceareas_28.js"></script><script src="layers/VocusFibrePtyLtdCombinedareas_29.js"></script><script src="layers/VostroNetAustraliaPtyLtdCombinedserviceareas_30.js"></script><script src="layers/LBNCoPtyLtdCombinedServiceAreas_31.js"></script><script src="layers/OPENetworksPtyLtdcombinedserviceareas_32.js"></script><script src="layers/TelstraLimitedCombinedserviceareas_33.js"></script><script src="layers/OptiCommLtdCombinedServiceAreas_34.js"></script><script src="layers/Wireless_Backhaul_3Mar24_35.js"></script><script src="layers/LynhamCombinedServiceArea15May2026_36.js"></script><script src="layers/SLC_37.js"></script><script src="layers/Frontier_38.js"></script>
+        <script src="styles/AdvatelWirelessPtyLtdcombinedserviceareas_3_style.js"></script><script src="styles/AppliedITSystemsPtyLtdCombinedserviceareas_4_style.js"></script><script src="styles/ASNTelecomPtyLtdCombinedServiceAreas_5_style.js"></script><script src="styles/AustralianCommunicationsGroupPtyLtdCombinedserviceareas_6_style.js"></script><script src="styles/CipherTelPtyLtdcombinedserviceareas_7_style.js"></script><script src="styles/CNTCorpPtyLtdCombinedServiceAreas_8_style.js"></script><script src="styles/CommscoPtyLtdCombinedServiceAreas_9_style.js"></script><script src="styles/CommSolHoldingsPtyLtdcombinedserviceareas_10_style.js"></script><script src="styles/CoreFibreNetworksPtyLtdCombinedserviceareas_11_style.js"></script><script src="styles/DGTekPtyLtdCombinedserviceareas_12_style.js"></script><script src="styles/FiberAssetManagementPtyLtdcombinedserviceareas_13_style.js"></script><script src="styles/FibossPtyLtdCombinedserviceareas_14_style.js"></script><script src="styles/FrontierNetworksPtyLtdCombinedareas_15_style.js"></script><script src="styles/GtelecomPtyLtdCombinedServiceAreas_16_style.js"></script><script src="styles/InterphonePtyLtdCombinedServiceAreas_17_style.js"></script><script src="styles/LegionTelecomPtyLtdCombinedServiceAreas_18_style.js"></script><script src="styles/MyportPtyLtdCombinedserviceareas_19_style.js"></script><script src="styles/NetbayFreeWiFiPtyLtdCombinedserviceareas_20_style.js"></script><script src="styles/OMNIconnectPtyLtdcombinedserviceareas_21_style.js"></script><script src="styles/PipeNetworksPtyLtdCombinedserviceareas_22_style.js"></script><script src="styles/RealWorldNetworksPtyLtdCombinedserviceareas_23_style.js"></script><script src="styles/ReddenetPtyLtdCombinedserviceareas_24_style.js"></script><script src="styles/SensiaPtyLtdCombinedServiceAreas_25_style.js"></script><script src="styles/TaipanNetworxPtyLtdcombinedareas_26_style.js"></script><script src="styles/TransactCapitalCommunicationsPtyLtdCombinedserviceareas_27_style.js"></script><script src="styles/VineNetworksPtyLtdCombinedserviceareas_28_style.js"></script><script src="styles/VocusFibrePtyLtdCombinedareas_29_style.js"></script><script src="styles/VostroNetAustraliaPtyLtdCombinedserviceareas_30_style.js"></script><script src="styles/LBNCoPtyLtdCombinedServiceAreas_31_style.js"></script><script src="styles/OPENetworksPtyLtdcombinedserviceareas_32_style.js"></script><script src="styles/TelstraLimitedCombinedserviceareas_33_style.js"></script><script src="styles/OptiCommLtdCombinedServiceAreas_34_style.js"></script><script src="styles/Wireless_Backhaul_3Mar24_35_style.js"></script><script src="styles/LynhamCombinedServiceArea15May2026_36_style.js"></script><script src="styles/SLC_37_style.js"></script><script src="styles/Frontier_38_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
